@@ -4,6 +4,7 @@ Ndzalo
 Aluwani
 Xoliswa
 
+![ 3D E Commerce Platform Architecture on AWS](3D E commerce.pang)
 
 Project Overview
 
