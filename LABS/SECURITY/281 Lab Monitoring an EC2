@@ -1,1 +1,109 @@
 
+📊 Lab 281: Monitoring an EC2 Instance
+
+
+📌 Overview
+
+
+In this lab, I learned how to monitor an Amazon EC2 instance to understand its performance, availability, and resource usage.
+
+Monitoring is important because it helps detect issues early and ensures that applications run reliably in the cloud.
+
+
+
+This lab introduced me to basic monitoring concepts used in real-world AWS environments.
+
+
+
+
+
+🎯 Lab Objectives
+
+
+By completing this lab, I was able to:
+
+Verify that an EC2 instance is running
+
+View monitoring metrics
+
+Understand CPU utilization data
+
+Set up basic monitoring alerts
+
+Interpret EC2 performance information
+
+🛠️ What I Did (Step by Step)
+
+
+1️⃣ Verifying the EC2 Instance
+
+
+I started by confirming that the EC2 instance was running in the AWS Management Console.
+
+
+2️⃣ Viewing Monitoring Metrics
+
+
+I navigated to the monitoring section of the EC2 instance to view performance metrics such as CPU usage and network activity
+
+
+3️⃣ Analyzing CPU Utilization
+
+
+I focused on CPU utilization to understand how much processing power the instance was using over time.
+
+
+3️⃣ Analyzing CPU Utilization
+
+
+I focused on CPU utilization to understand how much processing power the instance was using over time.
+
+4️⃣ Creating a Monitoring Alarm
+
+
+I created a basic alarm to notify when CPU usage exceeded a defined threshold.
+
+This demonstrated how alerts can be used to detect performance issues.
+
+
+⚠️ Challenges Faced & Lessons Learned
+
+
+🔹 Understanding Metrics
+
+
+At first, interpreting the graphs was challenging, but learning what each metric represents made it clearer.
+
+
+
+🔹 Alert Configuration
+
+
+Choosing appropriate thresholds showed me how monitoring must be tailored to application needs.
+
+
+
+🔹 Importance of Monitoring
+
+
+This lab highlighted how monitoring helps maintain system reliability and performance.
+
+✅ Key Skills Gained
+Monitoring EC2 instances
+
+Interpreting performance metrics
+
+Understanding CPU utilization
+
+Setting up basic alarms
+
+Using AWS monitoring tools
+
+🧠 Reflection
+
+
+This lab helped me understand how monitoring is essential for maintaining healthy cloud resources.
+
+The skills learned here are directly applicable to AWS services like Amazon CloudWatch and real-world production environments.
+
+
