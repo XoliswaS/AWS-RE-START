@@ -1,1 +1,147 @@
+🖥️ 
+Introduction to the Amazon EC2 Lab
+
+
+This lab introduces the core concepts and practical skills needed to work with Amazon EC2 (Elastic Compute Cloud), one of the most important AWS services used to run virtual servers in the cloud. The purpose of this lab is to help beginners understand how to launch, configure, secure, and manage EC2 instances in a real cloud environment.
+
+
+
+During this lab, I learned how to create a virtual machine, connect to it, manage its settings, and understand how EC2 fits into AWS infrastructure. The hands-on experience helped me build confidence in using cloud compute services and understand how applications are hosted on AWS.
+
+Lab Objectives
+Launch an EC2 instance using the AWS Management Console
+
+Choose the appropriate AMI and instance type
+
+Connect securely to the instance using SSH
+
+Configure security groups and understand their role
+
+Start, stop, and terminate EC2 instances
+
+Explore basic Linux commands on the instance
+
+Challenges Faced
+
+
+During the lab, I encountered a few realistic challenges that helped me learn problem-solving in cloud environments:
+
+Connection Issues – At first, I couldn’t connect to my EC2 instance via SSH due to incorrect key pair permissions. I had to adjust the .pem file permissions to chmod 400 to resolve this.
+
+Security Group Restrictions – I forgot to allow port 22 in the security group, which blocked SSH access. Updating the inbound rules fixed the issue.
+
+Instance Termination Confusion – I accidentally stopped the wrong instance, which taught me the importance of naming instances clearly and double-checking instance IDs before actions.
+
+Understanding AMI Selection – Choosing the right AMI for Linux vs. Windows initially caused confusion. I learned how different AMIs affect software compatibility.
+
+
+
+Key Skills Gained
+Launching and managing EC2 instances
+
+Configuring security and access properly
+
+Connecting to instances securely via SSH
+
+Troubleshooting common EC2 setup issues
+
+Understanding cloud compute fundamentals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
