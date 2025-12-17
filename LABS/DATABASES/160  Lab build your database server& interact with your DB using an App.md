@@ -1,7 +1,7 @@
-🗄️ Lab 160: Your Database Server & Interact With Your DB Using an App
+Lab 160: Your Database Server & Interact With Your DB Using an App
 
 
-📌 Overview
+Overview
 
 
 In this lab, I learned how to set up a database server, connect it to an application, and interact with the database through the app.
@@ -14,7 +14,7 @@ This lab helped me see how data is stored, retrieved, and managed behind the sce
 
 
 
-🎯 Lab Objectives
+ Lab Objectives
 
 
 By completing this lab, I was able to:
@@ -32,7 +32,7 @@ Retrieve and view stored data
 Understand how apps interact with databases
 
 
-🛠️ What I Did (Step by Step)
+What I Did (Step by Step)
 
 
 1️⃣ Creating the Database Server
@@ -89,10 +89,10 @@ After inserting data, I confirmed that the information was stored correctly by v
 This showed how data can be retrieved from the database and displayed to users.
 
 
-⚠️ Challenges Faced & Lessons Learned
+*Challenges Faced & Lessons Learned
 
 
-🔹 Connection Errors
+*Connection Errors
 
 
 At first, the application could not connect to the database due to incorrect connection details.
@@ -101,19 +101,18 @@ Carefully checking the endpoint and credentials resolved the issue.
 
 
 
-🔹 Understanding Database Concepts
+*Understanding Database Concepts
 
 
 It took some time to understand how the app communicates with the database, but seeing data flow between them made the concept clearer.
 
 
-
-🔹 Importance of Configuration
+*Importance of Configuration
 
 
 This lab showed me how small configuration mistakes can prevent an entire application from working.
 
-✅ Key Skills Gained
+Key Skills Gained
 Setting up a database server
 
 Configuring database connection details
