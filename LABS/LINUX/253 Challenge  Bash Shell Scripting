@@ -1,1 +1,130 @@
+🧩 Lab 253: Challenge – Bash Shell Scripting
+
+
+📌 Overview
+
+
+In this challenge lab, I applied my knowledge of Bash shell scripting to automate tasks in a Linux environment.
+
+The goal was to create and run shell scripts that perform actions automatically, helping reduce manual work and improve efficiency.
+
+
+
+This lab strengthened my understanding of how scripting is used in real-world system administration and cloud environments.
+
+
+
+
+
+🎯 Lab Objectives
+
+
+By completing this challenge, I was able to:
+
+Create a Bash shell script
+
+Use variables and basic commands
+
+Apply execution permissions to a script
+
+Run the script from the terminal
+
+Verify script output
+
+
+
+🛠️ What I Did (Step by Step)
+
+
+1️⃣ Creating the Bash Script
+
+
+I created a new shell script file and added the appropriate shebang to indicate that the script should run using Bash.
+
+
+2️⃣ Adding Script Logic
+
+
+Inside the script, I added commands and variables to perform the required tasks.
+
+This showed how multiple Linux commands can be combined into one automated script.
+
+
+3️⃣ Setting Execution Permissions
+
+
+By default, scripts are not executable.
+
+I updated the file permissions so the script could be run directly from the terminal.
+
+
+
+
+4️⃣ Running the Script
+
+
+After setting the correct permissions, I executed the script from the command line and observed how it performed the tasks automatically.
+
+
+
+
+5️⃣ Verifying the Output
+
+
+I reviewed the output produced by the script to confirm that it ran successfully and completed all required steps.
+
+
+
+
+⚠️ Challenges Faced & Lessons Learned
+
+
+🔹 Script Errors
+
+
+Small mistakes such as missing commands or incorrect syntax caused errors.
+
+Carefully reviewing the script helped resolve these issues.
+
+
+
+🔹 Permission Issues
+
+
+Forgetting to make the script executable prevented it from running.
+
+This reinforced the importance of Linux file permissions.
+
+
+
+🔹 Debugging
+
+
+Running the script step by step made it easier to identify and fix problems.
+
+✅ Key Skills Gained
+Writing basic Bash scripts
+
+Using variables and commands
+
+Managing file permissions
+
+Automating tasks with scripts
+
+Debugging shell scripts
+
+🧠 Reflection
+
+
+This challenge helped me understand how Bash scripting can automate repetitive tasks and improve efficiency in cloud and Linux environments.
+
+It was a valuable skill that connects directly to system administration and DevOps practices.
+
+
+
+
+
+
+
+
 
