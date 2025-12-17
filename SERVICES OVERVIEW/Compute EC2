@@ -1,1 +1,47 @@
 
+
+Amazon EC2 (Elastic Compute Cloud)
+
+
+Amazon EC2 provides scalable virtual servers in the cloud. It allows you to launch, manage, and configure instances without needing physical hardware. EC2 helps organizations run websites, applications, backend services, and more.
+
+
+
+What I Learned
+How to launch and configure EC2 instances
+
+Understanding instance types and AMIs
+
+Using key pairs to connect securely
+
+Managing security groups
+
+Basic Linux commands on an EC2 instance
+
+Starting, stopping, and terminating instances
+
+
+
+Why EC2 Matters
+
+
+EC2 gives flexible, scalable compute power and is a core part of most cloud architectures.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
