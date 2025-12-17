@@ -1,0 +1,303 @@
+📌 
+Project Overview
+
+
+This project is a simple, clean static website for a restaurant, created as part of a group assignment to demonstrate how AWS services can be used to host and manage a website.
+
+
+
+The website was built using standard web technologies and deployed on Amazon S3 as a static website.
+
+We also created a presentation explaining the AWS benefits, concepts, and services used.
+
+🎯 
+Project Objectives
+Build a functional static restaurant website
+
+Host the website using Amazon S3 Static Website Hosting
+
+Store website images in an S3 bucket
+
+Understand cloud hosting fundamentals
+
+Create presentation slides covering AWS benefits and how the website uses cloud services
+
+Practice teamwork, documentation, and cloud deployment skills
+
+🛠️ 
+Technologies Used
+
+
+Frontend
+HTML
+
+CSS
+
+JavaScript
+
+
+
+AWS Cloud Services
+Amazon S3 – Website hosting + image storage
+
+IAM – Permissions and access control
+
+AWS Management Console – Deployment and configuration
+
+☁️ 
+AWS Services in This Project
+
+
+🔹 
+Amazon S3 (Static Website Hosting)
+
+
+We created an S3 bucket and enabled static website hosting.
+
+The bucket stores:
+
+Website HTML files
+
+CSS and JavaScript files
+
+Images (menu photos, restaurant logo, interior photos)
+
+
+
+S3 provides:
+
+High availability
+
+Easy hosting
+
+Pay-as-you-go pricing
+
+No server configuration
+
+
+
+🔹 
+IAM
+
+
+IAM was used to:
+
+Manage permissions
+
+Ensure the bucket is accessible for web hosting
+
+Control who can upload or modify files
+
+📁 
+Website Features
+Clean and simple restaurant homepage
+
+Menu section
+
+Restaurant images stored in the S3 bucket
+
+Contact details section
+
+Responsive layout (optional depending on your version)
+
+🚀 
+Deployment Steps (Summary)
+Built HTML, CSS, and JS files as a team
+
+Created an Amazon S3 bucket
+
+Uploaded the website files into the bucket
+
+Enabled Static Website Hosting
+
+Updated bucket policy to allow public access (only for static hosting)
+
+Copied the S3 website URL to access the website online
+
+Uploaded images into the bucket so the website loads everything correctly
+
+🧩 
+Group Work Contribution
+
+
+This project was completed as a group project.
+
+Each member contributed to:
+
+Website design
+
+HTML/CSS/JS development
+
+AWS deployment
+
+Presentation slides
+
+Documentation
+
+📊 
+AWS Presentation Overview
+
+
+The presentation explained:
+
+What AWS is
+
+Benefits of cloud computing
+
+Why S3 is useful for hosting static websites
+
+Cost efficiency
+
+Scalability
+
+Security features
+
+The architecture of our deployment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
