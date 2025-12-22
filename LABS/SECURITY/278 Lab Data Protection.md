@@ -34,7 +34,6 @@ To implement robust data protection strategies using the **GnuPG (GPG)** suite, 
 2.  **Authentication:** Provided the secure passphrase established in Phase 1 to unlock the secret key.
 3.  **Integrity Check:** Verified that the decrypted output matched the original data perfectly, ensuring no corruption occurred during the cryptographic process.
 
-> ![Encryption Workflow Placeholder](https://via.placeholder.com/800x200?text=GPG+Workflow:+Encryption+to+Decryption+Validation)
 
 ### Phase 4: Public Key Exporting
 To facilitate secure communication with others, **I managed the distribution of public keys**.
