@@ -1,115 +1,55 @@
+# 🐍 Python Automation: Prime Number Generation & File I/O
 
- Lab 266: Troubleshooting Network Issues
+## 🎯 Project Overview
+In this challenge, **I developed a Python 3 script** to solve a computational math problem and automate the storage of results within a Linux environment. The project demonstrates my ability to implement efficient algorithms, manage file systems programmatically, and document technical paths for future automation.
 
+---
 
-📌 Overview
+## 🛠️ The Challenge Requirements
+**I directed the script to perform the following tasks:**
+1.  **Calculate** every prime number between 1 and 250.
+2.  **Automate** the creation of a `results.txt` file.
+3.  **Export** the calculated primes into the text file for verification.
+4.  **Validate** the script’s performance within a dual-version (Python 2/3) Linux environment.
 
+---
 
-In this lab, I practiced identifying and troubleshooting common network issues that can affect connectivity between systems and applications.
+## 📑 Step-by-Step Implementation
 
-The focus was on understanding how to systematically diagnose problems using basic networking tools and logical troubleshooting steps.
+### Phase 1: Algorithmic Logic Design
+**I architected the prime detection logic** focusing on mathematical efficiency. Instead of checking every possible divisor, I optimized the inner loop to stop at the square root of the number, significantly reducing CPU cycles.
 
 
 
-This lab helped me understand how networking problems occur and how to resolve them efficiently in real-world IT and cloud environments.
+### Phase 2: File Handling & Automation
+To ensure the data persisted outside of the terminal, **I implemented a context manager** (`with open`) to handle the file stream. This ensures that even if the script encounters an error, the file is closed safely and resources are released.
 
+### Phase 3: Environment Execution
+Given that the Linux host contained both Python 2 and 3, **I specifically targeted the Python 3 interpreter** to ensure the use of modern syntax and better performance.
 
+---
 
-🎯 Lab Objectives
+## 💻 The Solution Code
 
+```python
+# File: prime_generator.py
+# Purpose: Calculate primes 1-250 and save to results.txt
 
-By completing this lab, I was able to:
+def is_prime(n):
+    """Evaluates if a number is prime using optimized divisor checking."""
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-Identify common network connectivity problems
+# I used list comprehension for clean, readable data collection
+primes = [str(num) for num in range(1, 251) if is_prime(num)]
 
-Verify network configuration settings
+# Automated File I/O
+with open('results.txt', 'w') as f:
+    f.write('\n'.join(primes))
 
-Test connectivity between systems
-
-Check firewall or security restrictions
-
-Resolve basic network issues
-
-
-
-
-🛠️ What I Did (Step by Step)
-
-
-1️⃣ Verifying Network Configuration
-
-
-I started by checking the system’s network configuration to ensure it had a valid IP address, subnet, and gateway.
-
-
-2️⃣ Testing Network Connectivity
-
-
-I tested connectivity to other systems and external resources to confirm whether the network connection was working
-
-
-3️⃣ Checking Firewall and Security Settings
-
-
-I reviewed firewall or security rules to confirm that required network traffic was allowed and not being blocked.
-
-
-4️⃣ Identifying the Root Cause
-
-
-By reviewing the results from each test, I identified where the network issue was occurring and what was causing the failure.
-
-
-
-
-5️⃣ Resolving the Network Issue
-
-
-I applied the necessary changes to fix the issue and verified that network connectivity was restored successfully.
-
-
-
-
-⚠️ Challenges Faced & Lessons Learned
-
-
-🔹 Misconfigured Network Settings
-
-
-Incorrect network configuration caused connectivity issues.
-
-This highlighted the importance of verifying settings step by step.
-
-
-
-🔹 Blocked Network Traffic
-
-
-Firewall rules initially prevented communication, reinforcing the need to review security controls carefully.
-
-
-
-🔹 Structured Troubleshooting
-
-
-Following a logical troubleshooting process made it easier to find and resolve the issue.
-
-✅ Key Skills Gained
-Diagnosing network connectivity issues
-
-Verifying network configurations
-
-Testing and validating connections
-
-Understanding firewall and security impacts
-
-Applying systematic troubleshooting methods
-
-🧠 Reflection
-
-
-This lab showed me how important a structured approach to network troubleshooting is.
-
-The skills I practiced are directly applicable to cloud environments, especially when working with AWS networking components such as VPCs and security groups.
-
-
+print(f"Success: Found {len(primes)} primes and saved them to results.txt")
+ 
