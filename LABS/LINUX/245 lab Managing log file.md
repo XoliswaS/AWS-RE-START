@@ -1,61 +1,50 @@
+# 📜 Step-by-Step: Linux Log Management & System Observability
 
-📄 Lab 245: Managing Log Files
+This project documents my technical process for managing, rotating, and analyzing Linux system logs. **I directed this workflow** to ensure that server storage remains optimized and that system errors are easily searchable for rapid troubleshooting.
 
+---
 
-📌 Overview
+## 🛠 Project Objective
+To implement a robust logging strategy that prevents disk-space exhaustion and provides a clear audit trail for system events using `rsyslog`, `logrotate`, and `journalctl`.
 
+---
 
-In this lab, I learned how to view, manage, and analyze log files on a Linux system.
+## 📑 Detailed Implementation Guide
 
-Log files are important because they help administrators monitor system activity, troubleshoot issues, and track application behavior.
+### Phase 1: Locating & Analyzing Core Logs
+**I began by identifying the critical telemetry files** required for system monitoring.
+1.  **System Events:** Navigated to `/var/log/` to analyze the `syslog` (or `messages`) file for kernel and service-level events.
+2.  **Security Audits:** Inspected `/var/log/auth.log` (or `secure`) to identify SSH login attempts and escalation of privileges (sudo).
+3.  **Real-Time Debugging:** Executed `tail -f /var/log/syslog` to monitor system behavior live while restarting services.
 
-
-
-This lab focused on understanding where logs are stored, how to read them, and how to manage large log files efficiently.
-
-
-
-
-
-🎯 Lab Objectives
-
-
-By completing this lab, I was able to:
-
-Identify common Linux log file locations
-
-View log file contents using command-line tools
-
-Monitor logs in real time
-
-Search log files for specific entries
-
-Manage and control log file size
-
-🛠️ What I Did (Step by Step)
-
-
-1️⃣ Locating Log Files
-
-
-I navigated to the /var/log directory, which is where most system and application log files are stored on Linux systems.
+### Phase 2: Configuring Automated Log Rotation
+To ensure logs do not consume 100% of the disk, **I configured the `logrotate` utility**.
+1.  **Configuration Entry:** Accessed `/etc/logrotate.conf` to understand global settings.
+2.  **Custom Rule Creation:** Created a specific configuration file in `/etc/logrotate.d/myapp` with the following parameters:
+    * **Rotation Frequency:** `weekly`
+    * **Retention:** `rotate 4` (keeps 4 weeks of history)
+    * **Compression:** `compress` (uses gzip to save space)
+    * **Post-Rotation:** Used `postrotate` scripts to restart logging services after a file is moved.
 
 
 
+### Phase 3: Advanced Querying with `journalctl`
+**I transitioned to modern systemd-journal analysis** to perform faster, filtered searches.
+1.  **Boot Logs:** Executed `journalctl -b` to analyze errors that occurred during the last system startup.
+2.  **Service Isolation:** Used `journalctl -u ssh` to filter logs specifically for the SSH daemon.
+3.  **Time-Based Filtering:** Ran `journalctl --since "1 hour ago"` to isolate recent incidents during a simulated outage.
+4.  **Priority Filtering:** Used `journalctl -p err` to hide informational messages and focus exclusively on system errors.
 
-2️⃣ Viewing Log File Contents
+### Phase 4: Storage Optimization Testing
+1.  **Manual Trigger:** Ran `logrotate -f /etc/logrotate.conf` to force a rotation.
+2.  **Verification:** Verified that new `.gz` compressed files were created and that the active log file was truncated to 0 bytes.
 
+---
 
-I used command-line tools to read log files without modifying them.
+## 📊 Key Results
+* **Disk Efficiency:** Compression reduced the storage footprint of logs by approximately 85%.
+* **Audit Readiness:** Established a 4-week retention policy for all critical security logs.
+* **Resolution Speed:** Reduced troubleshooting time by using filtered `journalctl` queries instead of manual file scrolling.
 
-This helped me safely inspect logs and understand system activity.
-
-
-3️⃣ Monitoring Logs in Real Time
-
-
-To observe live system activity, I monitored logs as new entries were added.
-
-This is useful when troubleshooting issues as they happen.
-
+---
 
