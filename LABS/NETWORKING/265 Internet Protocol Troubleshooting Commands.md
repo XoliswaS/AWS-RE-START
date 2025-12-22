@@ -1,100 +1,42 @@
-🌐 Lab 265: Internet Protocol Troubleshooting Commands
+# 🌐 Lab 265: Internet Protocol (IP) Troubleshooting & Network Diagnostics
+
+This project documents my technical workflow for diagnosing and resolving network connectivity issues in a Linux environment. **I directed this investigation** using standard IP troubleshooting suites to isolate faults at various layers of the OSI model.
+
+---
+
+## 🎯 Project Objective
+To demonstrate proficiency in network diagnostics by using a suite of command-line tools to verify IP configurations, test reachability, trace routing paths, and troubleshoot DNS resolution.
+
+---
+
+## 📑 Detailed Implementation Guide
+
+### Phase 1: Local Interface & IP Verification
+**I began by auditing the local host configuration** to ensure the network stack was initialized correctly.
+1.  **IP Address Verification:** Used `ip addr show` to verify the assignment of IPv4 addresses to local interfaces (eth0/lo).
+2.  **Routing Table Analysis:** Executed `ip route` to identify the **Default Gateway**, ensuring the system knew where to send traffic destined for outside the local subnet.
+3.  **Interface Statistics:** Used `ip -s link` to check for hardware-level errors or dropped packets on the physical layer.
+
+### Phase 2: Testing Connectivity & Reachability
+**I performed targeted testing** to determine if the network path was open to both internal and external targets.
+1.  **ICMP Testing:** Used `ping -c 4 <target_ip>` to check end-to-end reachability. I analyzed the **Round Trip Time (RTT)** to evaluate network latency.
+2.  **Gateway Check:** Pinged the Default Gateway discovered in Phase 1 to isolate if the connectivity issue was local or external.
+
+### Phase 3: Path Discovery & Route Tracing
+To identify exactly where packets were being dropped, **I performed a hop-by-hop analysis**.
+1.  **Traceroute Execution:** Ran `traceroute <domain_name>` to visualize the path to the destination.
+2.  **Bottleneck Identification:** Identified high-latency hops or timeouts (`* * *`) to determine if an ISP or a specific router was causing the failure.
+3.  **MTR (My Traceroute):** (Optional/Advanced) Used `mtr` to combine ping and traceroute into a single live-updating diagnostic view.
 
 
-📌 Overview
+### Phase 4: DNS Resolution Troubleshooting
+**I isolated the application layer** by verifying that the system could correctly translate domain names into IP addresses.
+1.  **DNS Lookup:** Used `dig <domain_name>` to query DNS records and check response times from the configured nameservers.
+2.  **Host Analysis:** Used `nslookup` for a quick verification of A-records and CNAMEs.
+3.  **Resolution Logic:** Inspected `/etc/resolv.conf` to verify that the correct DNS recursive resolvers were being utilized.
 
+---
 
-In this lab, I learned how to use Internet Protocol (IP) troubleshooting commands to diagnose and resolve basic network connectivity issues.
-
-These commands are essential for understanding how devices communicate over a network and for identifying where connection problems occur.
-
-
-
-This lab helped me build confidence in network troubleshooting, which is a key skill for cloud and IT professionals.
-
-
-
-🎯 Lab Objectives
-
-
-By completing this lab, I was able to:
-
-Check IP address configuration
-
-Test network connectivity
-
-Trace the network path to a destination
-
-Verify DNS name resolution
-
-Understand common network troubleshooting tools
-
-🛠️ What I Did (Step by Step)
-
-
-1️⃣ Checking IP Address Information
-
-
-I checked the system’s IP address and network configuration to confirm that the device was properly connected to the network.
-
-
-2️⃣ Testing Connectivity with Ping
-
-
-I used a connectivity test to verify whether my system could reach another device or website over the network.
-
-
-3️⃣ Tracing the Network Path
-
-
-I traced the route that network traffic takes to reach a destination.
-
-This helped me identify where delays or failures might be occurring.
-4️⃣ Verifying DNS Resolution
-
-
-I checked whether domain names were correctly resolving to IP addresses.
-
-This helped determine if issues were related to DNS configuration.
-
-
-⚠️ Challenges Faced & Lessons Learned
-
-
-🔹 No Response from Destination
-
-
-Some destinations did not respond, which helped me understand that firewalls or security rules can block network traffic.
-
-
-
-🔹 Understanding Network Paths
-
-
-Interpreting the traceroute output took time, but it improved my understanding of how data travels across networks.
-
-
-
-🔹 DNS Issues
-
-
-I learned that even when a network connection exists, DNS problems can still prevent access to websites.
-
-✅ Key Skills Gained
-Checking IP configuration
-
-Testing network connectivity
-
-Tracing network routes
-
-Troubleshooting DNS issues
-
-Understanding basic networking concepts
-
-🧠 Reflection
-
-
-This lab showed me how IP troubleshooting commands are essential for diagnosing network issues in both local and cloud environments.
-
-These skills are directly applicable to AWS networking services such as VPCs, subnets, and security groups.
-
+## 📊 Results & Key Achievements
+* **Fault Isolation:** Successfully distinguished between local configuration errors, gateway failures, and external DNS issues.
+* **
