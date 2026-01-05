@@ -1,5 +1,3 @@
-
-
 Amazon EC2 (Elastic Compute Cloud)
 
 
@@ -26,6 +24,8 @@ Why EC2 Matters
 
 
 EC2 gives flexible, scalable compute power and is a core part of most cloud architectures.
+
+
 
 
 
