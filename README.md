@@ -1,62 +1,56 @@
-# 🌩️ AWS re/Start Journey
+🌩️ AWS re/Start Journey
+📖 Portfolio Overview
+This repository documents my AWS re/Start learning journey, showcasing hands-on labs, practical projects, AWS architectures, and service overviews developed throughout the program.
 
-## 📖 Portfolio Overview
-This repository documents my **12-week AWS re/Start learning journey**, highlighting practical experience, real-world projects, and structured notes developed throughout the program.
+Screenshots are included where applicable to demonstrate completed exercises and practical experience.
 
-Screenshots are provided where applicable to demonstrate completed tasks and hands-on experience.
+🗂️ Portfolio Structure
+Folder
 
----
+Contents
 
-## 🗂️ Portfolio Structure
-| Folder | Contents |
-|---|---|
-| **[labs](./labs/)** | Screenshots demonstrating completed exercises |
-| **[projects](./projects/)** | AWS architectures and practical deployments |
-| **[certifications](./certifications/)** | Course completions and digital badges |
-| **[notes](./notes/)** | Service summaries and study materials |
+labs
 
----
+Screenshots demonstrating completed hands-on exercises
 
-## 📊 Current Progress
+projects
 
-- **✅ Cloud Foundations**
-- Theory completed
-- Core AWS services and compute concepts completed
+AWS architectures and practical deployments
 
-- **✅ Linux**
-- Theory completed
-- Practical use cases completed
+certifications
 
-- **✅ Networking**
-- Theory and foundational concepts completed
+Certifications, course completions, and digital badges
 
-- **✅ Security**
-- Theory completed
+service-overview
 
-- **🟡 Python Programming**
-- Practical exercises started
-- Theory in progress
+AWS service overviews and key concepts
 
-- **🟡 Databases**
-- Some theory completed
-- Practical work pending
+📊 Final Progress
+✅ Cloud Foundations — Completed
+✅ Linux — Completed
+✅ Networking — Completed
+✅ Security — Completed
+✅ Python Programming — Completed
+✅ Databases — Completed
+✅ AWS Architecture — Completed
+🏆 AWS Exam — Passed
+🎯 Learning Objectives
+Build a strong foundation in AWS cloud computing
+Apply Linux, networking, security, and database concepts in practical environments
+Develop Python fundamentals for scripting and automation
+Gain hands-on experience with AWS services and cloud architectures
+Document practical learning through projects, labs, and service overviews
+Develop skills for entry-level Cloud and IT roles
+🏆 Achievement
+AWS re/Start Program — Completed ✅
 
-- **✅ AWS Architecture**
-- Architecture principles fully completed
+AWS Exam — Passed 🎉
 
----
+Successfully completed the AWS re/Start learning journey and passed the associated AWS exam.
 
-## 🎯 Learning Objectives
-- Develop strong foundational knowledge of AWS cloud services
-- Apply Linux, networking, and security concepts in practical environments
-- Build Python fundamentals for automation and scripting
-- Maintain a professional cloud portfolio with supporting screenshots
-- Prepare for entry-level cloud and IT roles
-
----
-
-## 🚀 Next Steps
-- Complete Python programming theory and practice
-- Begin database implementations
-- Expand AWS projects and architectures
-- Prepare for AWS certification exams
+🚀 Next Steps
+Build and deploy more real-world AWS projects
+Strengthen Cloud and DevOps engineering skills
+Gain hands-on experience with CI/CD, Docker, Kubernetes, and Infrastructure as Code
+Expand my cloud engineering portfolio
+Continue pursuing advanced cloud and DevOps certifications
